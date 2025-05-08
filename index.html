@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        header {
+            background-image: url("images/iran.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Chomsky', 'Times New Roman', Times, serif;
+            position: center;
+        }
+
+        body {
+            font-family: 'Chomsky', 'Times New Roman', Times, serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        h2 {
+        font-family: 'Chomsky', 'Times New Roman', Times, serif;
+        }
+
+        .bg-light {
+        background-color: #00000031 !important;
+        }
+
+        img.rounded-circle {
+        transition: transform 0.3s ease;
+        }
+        img.rounded-circle:hover {
+        transform: scale(1.05);
+        }
+
+        .card-hover {
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.5s ease;
+        }
+
+        .card-hover:hover {
+        transform: scale(1.05);
+        }
+
+        .card-hover .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0,0,0,0.6);
+        color: #fff;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+        font-size: 1rem;
+        }
+
+        .card-hover:hover .overlay {
+        opacity: 1;
+        }
+  </style>
+  </head>
+  <body>
+   
+    <!-- main header with hero image -->
+    <header class="container-fluid text-center vh-100 d-flex flex-column justify-content-center text-white">
+        <h1 class="display-1 fw-bolder">I'm an investigative reporter covering immigration, tech, and public safety.</h1>
+    </header>
+
+
+    <!-- start main text -->
+    <section class="container my-5">
+      <h2 class="text-center mb-4">About Me</h2>
+      <div class="row justify-content-center align-items-center bg-light p-4 rounded shadow-sm">
+        <div class="col-md-4 text-center mb-3 mb-md-0">
+          <img src="images/HEADSHOT.jpeg" alt="Daniella Jiménez headshot" class="img-fluid rounded-circle shadow" style="max-width: 250px; border: 5px solid #fff;">
+        </div>
+        <div class="col-md-8">
+          <h2 class="fw-bold">Daniella Jiménez</h2>
+          <p>Jiménez, a Miami native, is a journalist and graduate student at UC Berkeley's Graduate School of Journalism. She reports for the Investigative Reporting Program in Berkeley, California. Recently, she was awarded the NICAR25 fellowship by the Investigative Reporters and Editors organization. Her work has appeared in USA TODAY, Mother Jones, The Washington Post, CNBC, and NBC4/Telemundo44 in Washington D.C.</p>
+          <p>While at AU, she served as president of the school’s chapter of the National Association of Hispanic Journalists, was a reporting fellow at the Investigative Reporting Workshop, and earned the Ron Sutton Visual Literacy Award and the American News Women's Club Scholarship. The proud daughter of first-generation Colombian immigrants, she was raised in Hialeah, Florida.</p>
+        </div>
+      </div>
+    </section>
+
+        <section class="container my-5">
+            <h2 class="mb-4 text-center">Published Work</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+              
+                <!-- USA TODAY Article -->
+                <div class="col">
+                  <div class="card card-hover h-100 shadow-sm border-0">
+                    <img src="images/river.jpg" class="card-img-top" alt="USA TODAY article image">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <a href="https://www.usatoday.com/story/news/investigations/2024/08/28/rapidan-dam-minnesota-national-risks/74955664007/" target="_blank" class="text-decoration-none text-dark">
+                          This overflowing dam swept away a family's legacy
+                        </a>
+                      </h5>
+                      <p class="card-text text-muted">
+                        Thousands of U.S. dams are in poor condition. One collapse in Minnesota exposed the fragile system that could cost lives.
+                      </p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 text-muted small">
+                      USA TODAY — Aug. 28, 2024
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Washington Post Article -->
+                <div class="col">
+                  <div class="card card-hover h-100 shadow-sm border-0">
+                        <img src="images/trump.jpg" class="card-img-top" alt="Washington Post article image">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="https://www.washingtonpost.com/politics/interactive/2023/trump-pardon-power-2024-benefit/?itid=sr_7_005bfaa1-551c-4913-b02c-ee9f227e7791" target="_blank" class="text-decoration-none text-dark">
+                                    Trump pardoned them. Now they’re helping him return to power.
+                                </a>
+                            </h5>
+                            <p class="card-text text-muted">
+                                Formerly convicted Trump allies are returning to politics — and using their platforms to defend his legacy.
+                            </p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 text-muted small">
+                            The Washington Post — Dec. 2, 2023
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mother Jones Article -->
+                <div class="col">
+                  <div class="card card-hover h-100 shadow-sm border-0">
+                        <img src="images/visa.jpg" class="card-img-top" alt="Mother Jones article image">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="https://www.motherjones.com/politics/2023/10/the-biggest-backlog-in-the-us-diversity-visa-program-may-be-all-the-broken-promises/" target="_blank" class="text-decoration-none text-dark">
+                                    The Biggest Backlog in the US Diversity Visa Program?
+                                </a>
+                            </h5>
+                            <p class="card-text text-muted">
+                                Thousands of immigrants won a U.S. visa lottery. Then the government left them behind.
+                            </p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 text-muted small">
+                            Mother Jones — Oct. 12, 2023
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Charter Schools -->
+                <div class="col">
+                  <div class="card card-hover h-100 shadow-sm border-0">
+                        <img src="images/school.jpg" class="card-img-top" alt="Charter school image">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="#" class="text-decoration-none text-dark">
+                                    WCCUSD schools are losing students to charter schools at alarming rate
+                                </a>
+                            </h5>
+                            <p class="card-text text-muted">
+                                Enrollment declines and charter growth have worsened the district's financial stress.
+                            </p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 text-muted small">
+                            Richmond Confidential — Dec. 19, 2024
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Test Scores -->
+                <div class="col">
+                  <div class="card card-hover h-100 shadow-sm border-0">
+                        <img src="images/valley.jpg" class="card-img-top" alt="Test scores image">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="https://richmondconfidential.org/2024/12/20/wccusd-test-scores-lag-behind-state-with-sharp-swings-that-show-disparity-among-schools/" target="_blank" class="text-decoration-none text-dark">
+                                    WCCUSD test scores lag behind state
+                                </a>
+                            </h5>
+                            <p class="card-text text-muted">
+                                While some schools improved, others saw test score drops of 20+ points. Students still trail the state average.
+                            </p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 text-muted small">
+                            Richmond Confidential — Dec. 20, 2024
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Election -->
+                <div class="col">
+                  <div class="card card-hover h-100 shadow-sm border-0">
+                        <img src="images/vote.jpg" class="card-img-top" alt="Election results image">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="https://richmondconfidential.org/2024/12/16/how-did-richmond-vote-final-2024-general-election-results-charts/" target="_blank" class="text-decoration-none text-dark">
+                                    How did Richmond vote? Final 2024 general election results
+                                </a>
+                            </h5>
+                            <p class="card-text text-muted">
+                                Charts show how Richmond voted in key races, including mayor, school board and propositions.
+                            </p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 text-muted small">
+                            Richmond Confidential — Dec. 16, 2024
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+
+    <!-- Footer -->
+    <footer class="container-fluid bg-dark text-white p-5">
+        <p class="text-center">Website by Daniella Jiménez</p>
+    </footer>
+
+    <script src="js/bootstrap.bundle.js"></script>
+  </body>
+</html>
